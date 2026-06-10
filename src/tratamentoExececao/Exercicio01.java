@@ -8,12 +8,11 @@ public class Exercicio01 {
         int a, b;
 
         try {
-        System.out.println("Informe o primeiro valor: ");
-        a = ler.nextInt();
+            System.out.println("Informe o primeiro valor: ");
+            a = ler.nextInt();
 
-        System.out.println("Informe o segundo valor.: ");
-        b = ler.nextInt();
-
+            System.out.println("Informe o segundo valor.: ");
+            b = ler.nextInt();
 
             System.out.println("Resultados");
             System.out.println("Soma: " + (a + b));
