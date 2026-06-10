@@ -10,7 +10,7 @@ public class Exercicio07 {
         try {
             System.out.println("Informe o Fatorial: ");
             num = ler.nextInt();
-        } catch (ArithmeticException erro) {
+        } catch (RuntimeException erro) {
             System.out.println("O valor digitado deve ser um número inteiro");
         }
 
