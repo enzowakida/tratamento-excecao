@@ -6,10 +6,11 @@ import java.util.Scanner;
 public class Exercicio06 {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
+        int numero = 0;
 
         try {
             System.out.println("Escolha um número entre 1 a 3: ");
-            int numero = ler.nextInt();
+            numero = ler.nextInt();
         } catch (InputMismatchException erro) {
             System.out.println("Valor incorreto! Digite um valor inteiro.");
         }
