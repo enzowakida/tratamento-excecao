@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Exercicio04 {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
-
         double v1 = 0, v2 = 0, v3 = 0;
 
         try {
@@ -26,8 +25,8 @@ public class Exercicio04 {
             } else {
                 System.out.println("O 3° valor é o maior " + v3);
             }
-        } catch (InputMismatchException erro) {
-            System.out.println("Valor incorreto!");
+        } catch (RuntimeException erro) {
+            System.out.println("O valor deve ser numérico e com vírgula");
         }
         ler.close();
     }
