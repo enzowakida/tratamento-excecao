@@ -8,9 +8,8 @@ public class Exercicio03 {
         Scanner ler = new Scanner(System.in);
         double x;
 
-        System.out.println("Digite uma nota: ");
-
         try {
+            System.out.println("Digite uma nota: ");
             x = ler.nextDouble();
 
             if (x >= 6) {
@@ -20,8 +19,8 @@ public class Exercicio03 {
             } else {
                 System.out.println("Reprovado");
             }
-        } catch (InputMismatchException erro) {
-            System.out.println("Valor da nota incorreto");
+        } catch (RuntimeException erro) {
+            System.out.println("O valor deve ser numérico e com vírgula");
         }
         ler.close();
 
