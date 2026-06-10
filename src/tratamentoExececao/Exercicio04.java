@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Exercicio04 {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
-        double v1 = 0, v2 = 0, v3 = 0;
+        double v1, v2, v3;
 
         try {
             System.out.println("Informe o valor 1: ");
