@@ -21,7 +21,7 @@ public class Exercicio01 {
             System.out.println("Divisão inteira: " + (a % b));
             System.out.println("Divisão exata: " + ((double) a / b));
             ler.close();
-        } catch (ArithmeticException erro) {
+        } catch (Exception erro) {
             System.out.println("Valores inválidos");
         }
     }
