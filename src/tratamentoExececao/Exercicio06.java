@@ -8,25 +8,25 @@ public class Exercicio06 {
         Scanner ler = new Scanner(System.in);
 
         try {
-        System.out.println("Escolha um número entre 1 a 3: ");
-        int numero = ler.nextInt();
-
-            switch (numero) {
-                case 1:
-                    System.out.println("O número escolhido foi: 1.");
-                    break;
-                case 2:
-                    System.out.println("O número escolhido foi: 2.");
-                    break;
-                case 3:
-                    System.out.println("O número escolhido foi: 3.");
-                    break;
-
-                default:
-                    System.out.println("O número escolhido é inválido! Digite um número entre 1 a 3.");
-            }
+            System.out.println("Escolha um número entre 1 a 3: ");
+            int numero = ler.nextInt();
         } catch (InputMismatchException erro) {
             System.out.println("Valor incorreto! Digite um valor inteiro.");
+        }
+
+        switch (numero) {
+            case 1:
+                System.out.println("O número escolhido foi: 1.");
+                break;
+            case 2:
+                System.out.println("O número escolhido foi: 2.");
+                break;
+            case 3:
+                System.out.println("O número escolhido foi: 3.");
+                break;
+
+            default:
+                System.out.println("O número escolhido é inválido! Digite um número entre 1 a 3.");
         }
         ler.close();
     }
