@@ -1,6 +1,5 @@
 package tratamentoExececao;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Exercicio05 {
@@ -11,7 +10,6 @@ public class Exercicio05 {
         String continua = "S";
 
         while(continua.equals("s") || continua.equals("S")) {
-            try {
                 System.out.println(" ##### Informe o Gabarito ##### ");
                 qtdeAcerto = 0;
 
@@ -37,9 +35,7 @@ public class Exercicio05 {
 
                 System.out.println("Deseja Continuar? S ou N ");
                 continua = ler.next();
-            } catch (IndexOutOfBoundsException erro) {
-                System.out.println("Digite algo correto");
-            }
+
         }
         System.out.println("Total de acertos: " + somaAcertos);
         System.out.println("O total de alunos é: " + totalAlunos);
